@@ -1,22 +1,34 @@
-import './style.css'
 
-window.addEventListener('DOMContentLoaded', function() {
-  var images = document.querySelectorAll('.grid-container img');
-  var index = 0;
 
-  setInterval(function() {
-    // Incrementa el índice de la imagen y reinicia si llega al final
-    index = (index + 1) % images.length;
 
-    // Genera valores aleatorios para las nuevas posiciones X e Y
-    var posX = Math.floor(Math.random() * 4) + 1;
-    var posY = Math.floor(Math.random() * 10) + 1;
+// Función para obtener los parámetros de la URL
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+      results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
-    // Aplica la transformación CSS para cambiar la posición de la imagen
-    images[index].style.gridColumn = posX;
-    images[index].style.gridRow = posY;
-  }, 200);
-});
+// Obtiene los parámetros de la URL
+let signo = getParameterByName('signo');
+let domingo = getParameterByName('domingo');
+let pelicula = getParameterByName('pelicula');
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtiene todos los enlaces en la página
+  let links = document.querySelectorAll('a');
+
+  // Itera sobre cada enlace y reemplaza 'XXX' y 'YYY' con los parámetros obtenidos
+  links.forEach(link => {
+    let href = link.getAttribute('href');
+    href = href.replace('XXX', encodeURIComponent(signo ? signo : ''));
+    href = href.replace('YYY', encodeURIComponent(domingo ? domingo : ''));
+    link.setAttribute('href', href);
+  });
+
+ 
 
 const objetos = [
   {
@@ -97,7 +109,7 @@ const objetos = [
     domingo: "Netflix and chill"
   },
   {
-    imagen: "Imagenes-fondo/Imagen12.jpg",
+    imagen: "Imagenes-fondo/Imagen12.jpg", 
     titulo: "Objeto 12",
     signo: ["Cancer", "Escorpio", "Piscis"],
     pelicula: "Harry Potter",
@@ -105,26 +117,24 @@ const objetos = [
   },
 ];
 
-// Configuración del servidor con Express.js
-const express = require('express');
-const app = express();
 
-// Configurar el middleware para analizar el cuerpo de las solicitudes
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 
-// Ruta para guardar las respuestas en el servidor
-app.post('/guardar-respuestas', (req, res) => {
-  const { signo, domingo, pelicula } = req.body; // Obtener las respuestas del cuerpo de la solicitud
+  let objetoElegido = objetos.find(objeto => {
+    return objeto.signo.includes(signo) && objeto.domingo === domingo && objeto.pelicula === pelicula;
+  });
 
-  // Aquí puedes realizar la lógica para guardar las respuestas en la base de datos
-  // Por ejemplo, utilizando un ORM (Object-Relational Mapping) o consultas a la base de datos
+  if (objetoElegido) {
+    let divResultado = document.getElementById('resultado');
 
-  // Respuesta de éxito
-  res.status(200).json({ message: 'Respuestas guardadas correctamente' });
-});
+    let title = document.createElement('h3'); // Creas un nuevo elemento h3 (o el elemento que prefieras)
+    title.textContent = objetoElegido.titulo; // Asignas el título del objeto al nuevo elemento
 
-// Iniciar el servidor
-app.listen(3000, () => {
-  console.log('Servidor iniciado en el puerto 3000');
+    let img = document.createElement('img');
+    img.src = objetoElegido.imagen;
+    img.alt = objetoElegido.titulo;
+    img.className = "imagen-resultado";
+
+    divResultado.appendChild(title); // Añades el título al div 'resultado'
+    divResultado.appendChild(img);
+  }
 });
