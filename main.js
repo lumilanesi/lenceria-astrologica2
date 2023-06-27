@@ -126,8 +126,12 @@ const objetos = [
   if (objetoElegido) {
     let divResultado = document.getElementById('resultado');
 
-    let title = document.createElement('h3'); // Creas un nuevo elemento h3 (o el elemento que prefieras)
-    title.textContent = objetoElegido.titulo; // Asignas el título del objeto al nuevo elemento
+    let title = document.createElement('h3'); // Creas un nuevo elemento h3 (o el elemento que prefieras) que es el titulo del objeto!
+    title.textContent = objetoElegido.titulo; // Asignas el título del objeto al nuevo elemento el que aparece en el html fin
+
+    title.className = 'titulo'; // le asigno la clase titulo para poder formatearlo en el css
+
+    divResultado.appendChild(title); 
 
     let img = document.createElement('img');
     img.src = objetoElegido.imagen;
@@ -138,3 +142,7 @@ const objetos = [
     divResultado.appendChild(img);
   }
 });
+
+
+
+

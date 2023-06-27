@@ -49,7 +49,10 @@ body {
   background-size:100px 100px;
 } 
 
+#logo {
+  width: 70vw;
 
+}
 .container {
   position: relative;
   z-index: 1;
@@ -95,8 +98,9 @@ body {
 }
 .button-container button:hover {
   background: transparent;
-  color: #76aef1;
+  color: #63001e;
   box-shadow: none;
+
 }
 
 .button-container button span:before,
@@ -145,21 +149,36 @@ body {
   position: relative;
 }
 
+.titulo {
+  color: #080000; 
+  font-size: 30px; 
+}
+
 .imagen-resultado {
   width: 65vw;
   height: auto;
+  border: 1px solid white;
 }
 
-.recuadro {
-  width: 80vw; 
-  height: 40vh; 
-  border: 2px solid rgb(255, 255, 255);
+#promo-alert {
+  background-color: rgb(250, 191, 235);
+  color: rgb(90, 20, 32);
+  font-size: 15px;
+  position: fixed;
+  z-index: 9999;
   padding: 20px;
-  background-color: transparent;
-  display: flex;  
-  justify-content: center;  
-  align-items: center; 
-  border-radius: 2px; 
-  
+  border-radius: 50%;
+  width: 85px; 
+  height: 85px; 
+  left: 2%; 
+  top: 32%;
+  transform: rotate(-20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
+a {
+  text-decoration: none;/*esto lo agregi para que los links no aparezcan subrayados que quedan feitos*/
+}
