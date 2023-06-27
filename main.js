@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const objetos = [
   {
     imagen: "Imagenes-fondo/Imagen1.jpg",
-    titulo: "Objeto 1",
+    titulo: "Less Leila Print",
     signo: ["Aries", "Leo", "Sagitario"],
     pelicula: "Titanic",
     domingo: "Netflix and chill"

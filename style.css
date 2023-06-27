@@ -5,7 +5,7 @@
 }
 h2 {
 text-align: center;
-
+text-shadow: 2px 2px 8px rgba(255, 255, 255);
 }
 
 /*ESTILOS DE LA PAGINA DE INICIO*/
@@ -39,13 +39,15 @@ text-align: center;
 
 body {
   font-family: 'OoohBaby-Regular', sans-serif;
+  font-size: 25px;
+  color: #5c073f;
   box-shadow: 0 0 0 5px white, 0 0 0 6px #f06ea4;
   background: -webkit-linear-gradient(45deg,rgba(227, 142, 137, 0.7) 0%, rgba(233, 146, 141, 0.7) 25%, rgba(227, 142, 137, 0.7) 25%, rgba(233, 146, 141, 0.7) 50%, rgba(227, 142, 137, 0.7) 50%, rgba(233, 146, 141, 0.7) 75%, rgba(227, 142, 137, 0.7) 75%, rgba(233, 146, 141, 0.7));
   background: -moz-linear-gradient(45deg,rgba(227, 142, 137, 0.7) 0%, rgba(233, 146, 141, 0.7) 25%, rgba(227, 142, 137, 0.7) 25%, rgba(233, 146, 141, 0.7) 50%, rgba(227, 142, 137, 0.7) 50%, rgba(233, 146, 141, 0.7) 75%, rgba(227, 142, 137, 0.7) 75%, rgba(233, 146, 141, 0.7));
   background: -o-linear-gradient(45deg,rgba(227, 142, 137, 0.7) 0%, rgba(233, 146, 141, 0.7) 25%, rgba(227, 142, 137, 0.7) 25%, rgba(233, 146, 141, 0.7) 50%, rgba(227, 142, 137, 0.7) 50%, rgba(233, 146, 141, 0.7) 75%, rgba(227, 142, 137, 0.7) 75%, rgba(233, 146, 141, 0.7));
   background: linear-gradient(45deg,rgba(227, 142, 137, 0.7) 0%, rgba(233, 146, 141, 0.7) 25%, rgba(227, 142, 137, 0.7) 25%, rgba(233, 146, 141, 0.7) 50%, rgba(227, 142, 137, 0.7) 50%, rgba(233, 146, 141, 0.7) 75%, rgba(227, 142, 137, 0.7) 75%, rgba(233, 146, 141, 0.7));
   background-size:100px 100px;
-  
+} 
 
 
 .container {
@@ -79,7 +81,7 @@ body {
   width: 90vw;
   margin-bottom: 10px;
   background: rgb(247, 150, 192);
-  background: radial-gradient(circle, rgba(247, 150, 192, 1) 0%, rgb(194, 26, 255) 100%);
+  background: radial-gradient(circle, rgb(243, 103, 163) 0%, rgb(194, 26, 255) 100%);
   color: #fff;
   font-family: 'OoohBaby-Regular', sans-serif;
   font-size: 30px;
@@ -139,11 +141,25 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 30vw;
+  max-width: 65vw;
   position: relative;
 }
 
 .imagen-resultado {
-  width: 30vw;
+  width: 65vw;
   height: auto;
 }
+
+.recuadro {
+  width: 80vw; 
+  height: 40vh; 
+  border: 2px solid rgb(255, 255, 255);
+  padding: 20px;
+  background-color: transparent;
+  display: flex;  
+  justify-content: center;  
+  align-items: center; 
+  border-radius: 2px; 
+  
+}
+
