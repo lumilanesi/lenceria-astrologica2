@@ -3,9 +3,17 @@
   font-family: 'OoohBaby-Regular';
   src: url('Fuentes/OoohBaby-Regular.ttf') format('truetype');
 }
+
+
+@font-face {
+  font-family: 'League';
+  src: url('Fuentes/League.ttf') format('truetype');
+}
+
 h2 {
 text-align: center;
-text-shadow: 2px 2px 8px rgba(255, 255, 255);
+
+color: #fff;
 }
 
 /*ESTILOS DE LA PAGINA DE INICIO*/
@@ -143,23 +151,21 @@ body {
   align-items: center;
   max-width: 65vw;
   position: relative;
+
 }
 
 .imagen-resultado {
   width: 65vw;
+  border: 2px solid rgb(255, 255, 255);
   height: auto;
 }
+h3  {
+color: #ffffff;
+font-family: League;
+font-size: 35px;
+font-family: 'League', sans-serif;
+} 
 
-.recuadro {
-  width: 80vw; 
-  height: 40vh; 
-  border: 2px solid rgb(255, 255, 255);
-  padding: 20px;
-  background-color: transparent;
-  display: flex;  
-  justify-content: center;  
-  align-items: center; 
-  border-radius: 2px; 
-  
-}
-
+.link { 
+text-decoration: none; /* esto es para sacarle el subrayadito al h3, que lo tiene porque es url*/
+} 
