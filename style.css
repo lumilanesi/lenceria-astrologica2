@@ -3,9 +3,17 @@
   font-family: 'OoohBaby-Regular';
   src: url('Fuentes/OoohBaby-Regular.ttf') format('truetype');
 }
+
+
+@font-face {
+  font-family: 'League';
+  src: url('Fuentes/League.ttf') format('truetype');
+}
+
 h2 {
 text-align: center;
-text-shadow: 2px 2px 8px rgba(255, 255, 255);
+
+color: #fff;
 }
 
 /*ESTILOS DE LA PAGINA DE INICIO*/
@@ -147,6 +155,7 @@ body {
   align-items: center;
   max-width: 65vw;
   position: relative;
+
 }
 
 .titulo {
@@ -156,9 +165,17 @@ body {
 
 .imagen-resultado {
   width: 65vw;
+  border: 2px solid rgb(255, 255, 255);
   height: auto;
   border: 1px solid white;
 }
+h3  {
+color: #ffffff;
+font-family: League;
+font-size: 35px;
+font-family: 'League', sans-serif;
+} 
+
 
 #promo-alert {
   background-color: rgb(250, 191, 235);
@@ -182,3 +199,5 @@ body {
 a {
   text-decoration: none;/*esto lo agregi para que los links no aparezcan subrayados que quedan feitos*/
 }
+
+
