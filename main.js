@@ -34,84 +34,84 @@ const objetos = [
   {
     imagen: "Imagenes-fondo/Imagen1.jpg",
     titulo: "Less Leila Print",
-    signo: ["Aries", "Leo", "Sagitario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Titanic",
     domingo: "Netflix and chill"
   },
   {
     imagen: "Imagenes-fondo/Imagen2.jpg",
     titulo: "Objeto 2",
-    signo: ["Tauro", "Virgo", "Capricornio"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Rapido y Furioso",
     domingo: "Mandar mensajito al chongo/novio"
   },
   {
     imagen: "Imagenes-fondo/Imagen3.jpg",
     titulo: "Objeto 3",
-    signo: ["Geminis", "Libra", "Acuario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Diario de una pasion/The notebook",
     domingo: "Merienda con amigas"
   },
   {
     imagen: "Imagenes-fondo/Imagen4.jpg",
     titulo: "Objeto 4",
-    signo: ["Cancer", "Escorpio", "Piscis"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Rapido y Furioso",
     domingo: "Mandar mensajito al chongo/novio"
   },
   {
     imagen: "Imagenes-fondo/Imagen5.jpg",
     titulo: "Objeto 5",
-    signo: ["Aries", "Leo", "Sagitario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Titanic",
     domingo: "Netflix and chill"
   },
   {
     imagen: "Imagenes-fondo/Imagen6.jpg",
     titulo: "Objeto 6",
-    signo: ["Tauro", "Virgo", "Capricornio"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Diario de una pasion/The notebook",
     domingo: "Merienda con amigas"
   },
   {
     imagen: "Imagenes-fondo/Imagen7.jpg",
     titulo: "Objeto 7",
-    signo: ["Geminis", "Libra", "Acuario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Harry Potter",
     domingo: "Netflix and chill"
   },
   {
     imagen: "Imagenes-fondo/Imagen8.jpg",
     titulo: "Objeto 8",
-    signo: ["Cancer", "Escorpio", "Piscis"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Rapido y Furioso",
     domingo: "Mandar mensajito al chongo/novio"
   },
   {
     imagen: "Imagenes-fondo/Imagen9.jpg",
     titulo: "Objeto 9",
-    signo: ["Aries", "Leo", "Sagitario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Titanic",
     domingo: "Merienda con amigas"
   },
   {
     imagen: "Imagenes-fondo/Imagen10.jpg",
     titulo: "Objeto 10",
-    signo: ["Tauro", "Virgo", "Capricornio"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Diario de una pasion/The notebook",
     domingo: "Mandar mensajito al chongo/novio"
   },
   {
     imagen: "Imagenes-fondo/Imagen11.jpg",
     titulo: "Objeto 11",
-    signo: ["Geminis", "Libra", "Acuario"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Titanic",
     domingo: "Netflix and chill"
   },
   {
     imagen: "Imagenes-fondo/Imagen12.jpg", 
     titulo: "Objeto 12",
-    signo: ["Cancer", "Escorpio", "Piscis"],
+    signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
     pelicula: "Harry Potter",
     domingo: "Mandar mensajito al chongo/novio"
   },
@@ -143,6 +143,35 @@ const objetos = [
   }
 });
 
+/*
+¿Cuál es tu lugar ideal para una cita?
+a) Cena elegante en un restaurante de lujo
+b) Un paseo al aire libre en un parque o la playa
+c) Una noche de películas en casa
+d) Cervecita en el happy hour
 
+¿Si tuvieses que elegir un color para vestirte el resto de tu vida, cual eligirías?
+a) Negro
+b) Rojo
+c) Nude/Beige
+d) Rosa
 
+¿Cuál sería tu actividad ideal para el fin de semana?
+a) Viaje a una ciudad cosmopolita
+b) Retiro de yoga en la naturaleza
+c) Fiesta con amigos
+d) Maratón de series en Netflix
+
+¿Cual cancíon de Britney preferís?
+a) Hit me baby one more time! de Britney Spears
+b) Toxic
+c) I'm a slave for you
+d) Stronger
+
+Si fueras una celebridad, ¿cuál sería tu estilo de moda?
+a) Glamoroso como Jennifer Lopez
+b) Clásico como Audrey Hepburn
+c) Casual chic como Jennifer Aniston
+d) Único y audaz como Lady Gaga
+*/
 

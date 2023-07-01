@@ -92,11 +92,11 @@ body {
   width: 90vw;
   margin-bottom: 10px;
   background: rgb(247, 150, 192);
-  background: radial-gradient(circle, rgb(243, 103, 163) 0%, rgb(194, 26, 255) 100%);
+  background: radial-gradient(circle, rgb(243, 103, 163) 0%, rgb(255, 65, 138) 100%);
   color: #fff;
   font-family: 'OoohBaby-Regular', sans-serif;
   font-size: 30px;
-  padding: 5px; /* Reducir el padding para disminuir la altura del botón */
+  padding: 5px; 
   border: none;
   box-shadow: -1px -1px 20px 0px rgba(255, 255, 255, 1),
     -4px -4px 5px 0px rgba(255, 255, 255, 1),
@@ -129,19 +129,7 @@ body {
   width: 100%;
 }
 
-/* ESTILOS ESPECÍFICOS DE LA PÁGINA DE INICIO */
-.background-slider {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+
 
 /* ESTILOS ESPECÍFICOS DEL FIN */
 .fin {
@@ -151,15 +139,15 @@ body {
 #resultado {
   display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: center;
   align-items: center;
   max-width: 65vw;
   position: relative;
-
 }
 
 .titulo {
-  color: #080000; 
+  color: #ffffff; 
   font-size: 30px; 
 }
 
@@ -168,36 +156,53 @@ body {
   border: 2px solid rgb(255, 255, 255);
   height: auto;
   border: 1px solid white;
+  z-index: 2;
 }
-h3  {
-color: #ffffff;
-font-family: League;
-font-size: 35px;
-font-family: 'League', sans-serif;
-} 
 
+h3 {
+  color: #ffffff;
+  font-size: 80px;
+  font-family: 'League', sans-serif;
+  z-index: 3;
+}
 
+.titulo {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(248, 95, 167, 0.7);
+}
+
+#resultado::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%; /* Cambiado de 0 a 5% para dejar un espacio de 5% en el lado izquierdo */
+  right: 5%; /* Cambiado de 0 a 5% para dejar un espacio de 5% en el lado derecho */
+  bottom: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+/*
 #promo-alert {
-  background-color: rgb(250, 191, 235);
-  color: rgb(90, 20, 32);
   font-size: 15px;
   position: fixed;
-  z-index: 9999;
+  z-index: 2;
   padding: 20px;
-  border-radius: 50%;
-  width: 85px; 
-  height: 85px; 
-  left: 2%; 
-  top: 32%;
+  width: 85px;
+  height: 85px;
+  left: 2%;
+  top: 38%;
   transform: rotate(-20deg);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-
+*/
 a {
-  text-decoration: none;/*esto lo agregi para que los links no aparezcan subrayados que quedan feitos*/
+  text-decoration: none;
 }
-
-
