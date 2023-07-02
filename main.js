@@ -1,7 +1,3 @@
-
-
-
-// Función para obtener los parámetros de la URL
 function getParameterByName(name, url = window.location.href) {
   name = name.replace(/[\[\]]/g, '\\$&');
   let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
@@ -28,121 +24,118 @@ document.addEventListener('DOMContentLoaded', function () {
     link.setAttribute('href', href);
   });
 
- 
 
 const objetos = [
   {
     imagen: "Imagenes-fondo/Imagen1.jpg",
     titulo: "Less Leila Print",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Titanic",
-    domingo: "Netflix and chill"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen2.jpg",
-    titulo: "Objeto 2",
+    titulo: "Less Micaela",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Rapido y Furioso",
-    domingo: "Mandar mensajito al chongo/novio"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen3.jpg",
-    titulo: "Objeto 3",
+    titulo: "Less Fru Fru",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Diario de una pasion/The notebook",
-    domingo: "Merienda con amigas"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen4.jpg",
-    titulo: "Objeto 4",
+    titulo: "Less Carolina",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Rapido y Furioso",
-    domingo: "Mandar mensajito al chongo/novio"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen5.jpg",
-    titulo: "Objeto 5",
+    titulo: "Less Nina",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Titanic",
-    domingo: "Netflix and chill"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen6.jpg",
-    titulo: "Objeto 6",
+    titulo: "Less Momi",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Diario de una pasion/The notebook",
-    domingo: "Merienda con amigas"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen7.jpg",
-    titulo: "Objeto 7",
+    titulo: "Less Mikonos",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Harry Potter",
-    domingo: "Netflix and chill"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen8.jpg",
-    titulo: "Objeto 8",
+    titulo: "Less Aitana",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Rapido y Furioso",
-    domingo: "Mandar mensajito al chongo/novio"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen9.jpg",
-    titulo: "Objeto 9",
+    titulo: "Less Tini",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Titanic",
-    domingo: "Merienda con amigas"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen10.jpg",
-    titulo: "Objeto 10",
+    titulo: "Less Delfina",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Diario de una pasion/The notebook",
-    domingo: "Mandar mensajito al chongo/novio"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen11.jpg",
-    titulo: "Objeto 11",
+    titulo: "Less Berlin",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Titanic",
-    domingo: "Netflix and chill"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
   {
     imagen: "Imagenes-fondo/Imagen12.jpg", 
-    titulo: "Objeto 12",
+    titulo: "Less Grecia",
     signo: ["Aries", "Leo", "Sagitario", "Tauro", "Virgo", "Capricornio","Geminis", "Libra", "Acuario","Cancer", "Escorpio", "Piscis"],
-    pelicula: "Harry Potter",
-    domingo: "Mandar mensajito al chongo/novio"
+    pelicula: ["Zapatillas", "Botas", "Tacos", "Chatitas"],
+    domingo: ["Tarjeta", "Leer mente", "Futuro"]
   },
 ];
 
 
-
-  let objetoElegido = objetos.find(objeto => {
-    return objeto.signo.includes(signo) && objeto.domingo === domingo && objeto.pelicula === pelicula;
-  });
-
-  if (objetoElegido) {
-    let divResultado = document.getElementById('resultado');
-
-    let title = document.createElement('h3'); // Creas un nuevo elemento h3 (o el elemento que prefieras) que es el titulo del objeto!
-    title.textContent = objetoElegido.titulo; // Asignas el título del objeto al nuevo elemento el que aparece en el html fin
-
-    title.className = 'titulo'; // le asigno la clase titulo para poder formatearlo en el css
-
-    divResultado.appendChild(title); 
-
-    let img = document.createElement('img');
-    img.src = objetoElegido.imagen;
-    img.alt = objetoElegido.titulo;
-    img.className = "imagen-resultado";
-
-    divResultado.appendChild(title); // Añades el título al div 'resultado'
-    divResultado.appendChild(img);
-  }
+let objetosCoincidentes = objetos.filter(objeto => {
+  return objeto.signo.includes(signo) && objeto.domingo.includes(domingo) && objeto.pelicula.includes(pelicula);
 });
 
+if (objetosCoincidentes.length > 0) {
+  let objetoAleatorio = objetosCoincidentes[Math.floor(Math.random() * objetosCoincidentes.length)];
+
+  let divResultado = document.getElementById('resultado');
+
+  let title = document.createElement('h3');
+  title.textContent = objetoAleatorio.titulo;
+  title.className = 'titulo';
+
+  divResultado.appendChild(title);
+
+  let img = document.createElement('img');
+  img.src = objetoAleatorio.imagen;
+  img.alt = objetoAleatorio.titulo;
+  img.className = "imagen-resultado";
+
+  divResultado.appendChild(img);
+}
+});
 /*
 ¿Cuál es tu lugar ideal para una cita?
 a) Cena elegante en un restaurante de lujo
