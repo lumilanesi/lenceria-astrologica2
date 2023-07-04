@@ -138,33 +138,38 @@ if (objetosCoincidentes.length > 0) {
 });
 /*
 ¿Cuál es tu lugar ideal para una cita?
-a) Cena elegante en un restaurante de lujo
-b) Un paseo al aire libre en un parque o la playa
-c) Una noche de películas en casa
-d) Cervecita en el happy hour
-
-¿Si tuvieses que elegir un color para vestirte el resto de tu vida, cual eligirías?
-a) Negro
-b) Rojo
-c) Nude/Beige
-d) Rosa
+a) Cena en un restaurante de lujo
+b) Mates en la costa
+c) Netflix and chill
+d) Barcito en happy hour
 
 ¿Cuál sería tu actividad ideal para el fin de semana?
-a) Viaje a una ciudad cosmopolita
-b) Retiro de yoga en la naturaleza
-c) Fiesta con amigos
-d) Maratón de series en Netflix
+a) Viajecito a Capital o a la costa
+b) Retiro en la naturaleza
+c) Juntada con amigos
+d) Cine y pochoclos
 
-¿Cual cancíon de Britney preferís?
-a) Hit me baby one more time! de Britney Spears
-b) Toxic
-c) I'm a slave for you
-d) Stronger
+¿Con quien te irias de fiesta?
+a) Tini y Maria becerra
+b) L gante con La Joaqui
+c) Susana Gimenez y Moria
+d) Santiago del Moro y Barassi
 
 Si fueras una celebridad, ¿cuál sería tu estilo de moda?
 a) Glamoroso como Jennifer Lopez
 b) Clásico como Audrey Hepburn
 c) Casual chic como Jennifer Aniston
 d) Único y audaz como Lady Gaga
+
+Que infusion preferis para la tarde
+a) Un latte suave
+b) Un expresso fuerte
+c) Un capuccino
+d) Un tecito
+
+
+
+
+
 */
 

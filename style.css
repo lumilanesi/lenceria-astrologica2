@@ -10,24 +10,35 @@
   src: url('Fuentes/League.ttf') format('truetype');
 }
 
-h2 {
+p {
 text-align: center;
-
+font-size: 35px;
+text-shadow: 2px 2px 6px rgb(103, 0, 48);
 color: #fff;
 }
 
+h2 {
+  text-align: center;
+
+
+  }
+
+.logo-underwear {
+position: relative;
+
+}
 /*ESTILOS DE LA PAGINA DE INICIO*/
-.background-slider {
-  position: fixed;
-  top: 0;
+
+.logo-underwear h4 {
+  color: #ffffff;
+  font-family: 'OoohBaby-Regular';
+  position: absolute;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(32%, 44%);
+  margin: auto;
 }
 
 .grid-container {
@@ -43,6 +54,22 @@ color: #fff;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@keyframes example {
+  from {width: 0;}
+  to {width: 100%;}
+}
+
+/* Aquí creas tu estilo que llevará la animación */
+#animated-text {
+  width: 0;
+  font-family: 'OoohBaby-Regular';
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 20px;
+  animation: example 4s steps(44); /* Ejecuta la animación. Los pasos deben coincidir con la cantidad de caracteres en tu texto */
+  animation-fill-mode: forwards; /* Hace que el elemento mantenga el estilo del último keyframe al finalizar la animación */
 }
 
 body {
@@ -164,6 +191,7 @@ h3 {
   font-size: 80px;
   font-family: 'League', sans-serif;
   z-index: 3;
+  letter-spacing: .2rem;
 }
 
 .titulo {
@@ -206,3 +234,7 @@ h3 {
 a {
   text-decoration: none;
 }
+/*
+@media screen and (min-width: 1000px) {
+
+}*/
