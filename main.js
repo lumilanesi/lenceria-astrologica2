@@ -149,11 +149,11 @@ b) Retiro en la naturaleza
 c) Juntada con amigos
 d) Cine y pochoclos
 
-¿Con quien te irias de fiesta?
+¿Con quien te irías de joda?
 a) Tini y Maria becerra
-b) L gante con La Joaqui
+b) L gante y La Joaqui
 c) Susana Gimenez y Moria
-d) Santiago del Moro y Barassi
+d) Naty Peluso y la Rosalía
 
 Si fueras una celebridad, ¿cuál sería tu estilo de moda?
 a) Glamoroso como Jennifer Lopez
